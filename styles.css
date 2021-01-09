@@ -16,7 +16,7 @@ html,
 body {
   min-width: 100vh;
   max-width: 1400px;
-  background-color: rgba(25, 25, 25, 255);
+  background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
 }
 body,
 a {
@@ -24,7 +24,6 @@ a {
   display: flex;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
- 
 }
 
 header nav {
@@ -63,65 +62,101 @@ header nav ul li:last-child {
   background-size: cover;
 }
 
-.text{
-align-items: center;
-justify-items: center;
+.text {
+  align-items: center;
+  justify-items: center;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
-  justify-content: center
+  justify-content: center;
 }
- .text h1{
-   text-transform: uppercase;
-   text-align: center;
-  font-size: 9.6rem;
-  color: white;
+.text h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
- }
-.text h2{
+  text-transform: uppercase;
+  color: white;
+  font-size: 8.4rem;
+}
+
+.text h1 span {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorCycle 10s ease-in-out infinite;
+  filter: brightness(0) invert(1);
+}
+
+.text h1 span:nth-child(1) {
+  background-image: linear-gradient(90deg, #f6ff08, #fc6b04);
+}
+.text h1 span:nth-child(2) {
+  background-image: linear-gradient(120deg, #f6ff08, #fc6b04);
+  animation-delay: 3.33s;
+}
+.text h1 span:nth-child(3) {
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  animation-delay: 6.66s;
+}
+
+.text h2 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorCycle 6s step-end infinite;
+  background-image: linear-gradient(80deg, #2c2c2c, #000000);
   margin-top: 42px;
   font-size: 3.2rem;
   font-weight: 500;
   text-align: center;
-  text-align: center;
 }
 
-.text button{
+.text button {
   margin-top: 52px;
   /* height: 90px;
   width: 220px; */
-  padding: 30px 15px;
+  padding: 20px 10px;
   border-radius: 100px;
-  background: #FC6B04;
+  background-image: linear-gradient(to right, #f83600 0%, #f99523 100%);
   transition: background 300ms ease-in;
 }
 
-.text button a{
+.text button a {
   margin: 8px;
   text-transform: uppercase;
   color: white;
   font-size: 1.4rem;
+  font-weight: 600;
 }
 .text button:hover {
-  background: #ee8712;
-
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
 }
 
-footer{
+footer {
   color: white;
   text-align: center;
   font-size: 1.6rem;
   text-transform: uppercase;
 }
 
-.product{
- 
-    display: flex;
-    max-width: 1400px;
-    height: 100vh;
-    background: url('./assets/bg1.png') no-repeat;
-    /* object-fit: contain; */
-    background-size: cover;
-  
+.product {
+  display: flex;
+  max-width: 1400px;
+  height: 100vh;
+  background: url('./assets/bg1.png') no-repeat;
+  /* object-fit: contain; */
+  background-size: cover;
 }
 
+@keyframes colorCycle {
+  0%,
+  55% {
+    filter: brightness(0) invert(1);
+  }
+  11%,
+  33% {
+    filter: none;
+  }
+}
