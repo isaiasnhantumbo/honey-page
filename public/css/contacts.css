@@ -1,0 +1,42 @@
+.contacts img {
+  margin: 80px auto;
+  width: 300px;
+  height: 60%;
+}
+
+.contacts {
+  color: white;
+  display: flex;
+
+  height: 100vh;
+  background: url('../assets/bg1.png') no-repeat;
+  background-size: cover;
+}
+
+.contacts .text_contacts {
+  margin: 0 auto;
+  margin-top: 120px;
+  font-family: 'lato' sans-serif;
+}
+
+.text_contacts h2 {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+  font-weight: 400;
+  max-width: 620px;
+}
+
+.text_contacts .pros {
+  display: flex;
+}
+
+.text_contacts ul {
+  margin: 32px 8px 32px 16px;
+}
+
+.text_contacts ul li {
+  list-style: disc;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+}

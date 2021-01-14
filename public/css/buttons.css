@@ -1,0 +1,72 @@
+.text button {
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #f09819 51%,
+      #ff512f 100%
+    );
+  }
+
+.text button {
+    /* margin: 28px; */
+    padding: 15px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    margin-top: 52px;
+  }
+  
+  .text button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .text button a {
+    margin: 8px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  
+/* Button buy */
+
+.buy {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+}
+.buy {
+  margin: 10px auto;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.buy a{
+  color: white;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: .4rem;
+}
+
+.buy:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}

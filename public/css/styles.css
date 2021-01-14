@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  max-width: 1400px;
+  height: 100vh;
+  background: url('../assets/bg1.png') no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid #fc6b04;
+}
+
+.text {
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.text h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* letter-spacing: -0.9rem; */
+
+  text-transform: uppercase;
+  color: white;
+  font-size: 8.4rem;
+}
+
+.text h1 span {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorCycle 10s ease-in-out infinite;
+  filter: brightness(0) invert(1);
+}
+
+.text h1 span:nth-child(1) {
+  background-image: linear-gradient(90deg, #f6ff08, #fc6b04);
+}
+
+.text h1 span:nth-child(2) {
+  background-image: linear-gradient(120deg, #f6ff08, #fc6b04);
+  animation-delay: 3.33s;
+}
+
+.text h1 span:nth-child(3) {
+  background-image: linear-gradient(to right, #f83600 0%, #67f923 100%);
+  animation-delay: 6.66s;
+}
+
+.text h2 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorCycle 6s step-end infinite;
+  background-image: linear-gradient(80deg, #2c2c2c, #000000);
+  margin-top: 42px;
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.product {
+  color: white;
+  display: flex;
+  height: 100vh;
+  background: url('../assets/bg1.png') no-repeat;
+  background-size: cover;
+}
+
+.product .text_product {
+  margin-top: 100px;
+  margin-left: 135px;
+  font-family: 'lato' sans-serif;
+}
+
+.text_product h2 {
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+  font-weight: 400;
+  max-width: 620px;
+}
+
+.text_product .pros {
+  display: flex;
+}
+
+.text_product ul {
+  margin: 32px 8px 32px 16px;
+}
+
+.text_product ul li {
+  list-style: disc;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+}
+
+.text_product h1 {
+  font-size: 2.2rem;
+  max-width: 700px;
+  margin-bottom: 3.2rem;
+}
+
+.product img {
+  margin-top: 120px;
+  width: 50%;
+  height: 60%;
+  object-fit: contain;
+}
+
+@keyframes colorCycle {
+  0%,
+  55% {
+    filter: brightness(0) invert(1);
+  }
+  11%,
+  33% {
+    filter: none;
+  }
+}
